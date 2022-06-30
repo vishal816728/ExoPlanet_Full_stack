@@ -1,0 +1,23 @@
+{
+  "name": "nasa_full_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server":"npm install --prefix server",
+    "install-client":"npm install --prefix client",
+    "install":"npm run install-server && npm run install-client",
+    "server":"cd server && npm run watch",
+    "client":"cd client && npm start",
+    "watch":"npm run server & npm run client",
+    "deploy":"npm run build --prefix client && npm start --prefix server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "16.14.1"
+  }
+}
+
